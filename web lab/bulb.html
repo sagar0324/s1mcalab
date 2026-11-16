@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bulb ON/OFF</title>
+</head>
+<body>
+<h2>TURN ON/OFF BULB USING JAVASCRIPT</h2>
+<img id="myImage"src="bulboff.jpeg"width="150">
+<br><br>
+<button onclick="turnOn()">ON</button>
+<button onclick="turnOff()">OFF</button>
+<script>
+function turnOn(){
+document.getElementById("myImage").src="bulbon.jpeg";
+}
+function turnOff(){
+document.getElementById("myImage").src="bulboff.jpeg";
+}
+</script>
+</body>
+</html>

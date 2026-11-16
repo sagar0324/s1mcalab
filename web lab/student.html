@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+<h1 align="center">STUDENT REGISTRATION FORM</h1>
+<form>	
+<label>Full Name:</label>
+<input type="text"name="name">
+<br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="others">Others
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="date"name="dob">
+<br><br>
+
+<label>Email:</label>
+<input type="email"name="email">
+<br><br>
+
+<label>Phone Number:</label>
+<input type="tel"name="phone"
+maxlength="10"
+minlength="10"
+pattern="[0-9]{10}"
+title="Entrer exactly 10 digits" required>
+<br><br>
+
+<label>Address:</label>
+<br><br>
+<textarea name="address" rows="4" cols="40"></textarea>
+<br><br>
+
+<label>Academic Qualification:</label>
+<select name="qualification">
+<option values="">Select Qualification</option>
+<option>B.sc</option>
+<option>B.Com</option>
+<option>B.A</option>
+<option>BCA</option>
+<option>Others</option>
+</select>
+<br><br>
+
+<label>Course:</label>
+<select name="course"required>
+<option values="">Select course</option>
+<option>MCA</option>
+<option>MBA</option>
+<option>M.Sc</option>
+<option>Others</option>
+</select>
+<br><br>
+
+<label>password:</label>
+<input type="password" name="password"
+minlength="8"
+maxlength="8"
+pattern="(?=.*[A-Za-z](?=.*[0-9])(?=.*[!@#$%^&*]).{8,8}"
+title="password must contain atleast 8 character,one alphabet,one digit and one special symbol" 
+required>
+<br><br>
+
+<label>Upload Certificate:</label>
+<input type="file"name="certificate">
+<br><br>
+
+<label>Date of Transfer Certificate:</label>
+<input type="date" name="tcdate">
+<br><br>
+
+<input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
+</form>
+</html>
